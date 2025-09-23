@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Q1_Address"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 12:15:02 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE2OzEwOjA4OjU3IEFNOzIzNDE="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzEyOjE1OjAyIFBNOzI7MjQ1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name, homeNo, street, city, pinCode, stateCountry" type="String" array="False" size=""/>
+            <input variable="Name"/>
+            <input variable="homeNo"/>
+            <input variable="street"/>
+            <input variable="city"/>
+            <input variable="pinCode"/>
+            <input variable="stateCountry"/>
+            <output expression="&quot; Name,homeNo,street,city,pinCode,stateCountry &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

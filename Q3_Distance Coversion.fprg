@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Q3_Distance Coversion"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 09:31:40 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzA5OjI0OjE2IFBNOzIzNTk="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzA5OjMxOjQwIFBNOzE7MjQ2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="distanceConvert, mileValue, meterValue" type="Integer" array="False" size=""/>
+            <input variable="distanceConvert"/>
+            <assign variable="mileValue" expression="distanceConvert*0.621371"/>
+            <assign variable="meterValue" expression="distanceConvert*1000"/>
+            <output expression="meterValue" newline="True"/>
+            <output expression="mileValue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

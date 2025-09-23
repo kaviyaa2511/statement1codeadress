@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Q7_Roots of Quadratic Equation"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 11:21:00 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzEwOjQ0OjAwIFBNOzIzNDY="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzExOjIxOjAwIFBNOzE7MjQ1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="coefficientX2, coefficientX, constant" type="Real" array="False" size=""/>
+            <input variable="coefficientX2"/>
+            <input variable="coefficientX"/>
+            <input variable="constant"/>
+            <assign variable="zeroOne" expression="&quot;((-coefficientX)+((coefficientX**2)-(4*coefficientX2*constant))**(1/2))/(2*coefficientX2)&quot;"/>
+            <assign variable="zeroTwo" expression="&quot;((-coefficientX)-((coefficientX**2)-(4*coefficientX2*constant))**(1/2))/(2*coefficientX2)&quot;"/>
+            <output expression="zeroOne" newline="True"/>
+            <output expression="zeroTwo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

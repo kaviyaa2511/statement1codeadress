@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Q6.Bignumber"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 10:41:55 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzEwOjI4OjQ1IFBNOzIzNTc="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzEwOjQxOjU1IFBNOzE7MjQ2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numberOne, numberTwo, numberThree" type="Real" array="False" size=""/>
+            <input variable="numberOne"/>
+            <input variable="numberTwo"/>
+            <input variable="numberThree"/>
+            <if expression="numberOne&gt;numberTwo and numberOne&gt;numberThree">
+                <then>
+                    <output expression="numberOne" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="numberTwo&gt;numberOne and numberTwo&gt;numberThree">
+                <then>
+                    <output expression="numberTwo" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="numberThree&gt;numberOne and numberThree&gt;numberTwo">
+                <then>
+                    <output expression="numberThree" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

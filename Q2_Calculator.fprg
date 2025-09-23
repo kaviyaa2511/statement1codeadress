@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Calculator"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 12:26:24 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTA5OzA5OjIzOjQ0IEFNOzIzNDQ="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzEyOjI2OjI0IFBNOzI7MjQ2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Oper" type="Integer" array="False" size=""/>
+            <declare name="YesNo" type="String" array="False" size=""/>
+            <input variable="Num1"/>
+            <input variable="Num2"/>
+            <while expression="True">
+                <output expression="&quot;1 - Add, 2 - Sub, 3 - Mul, 4 - Div, 5 - Mod&quot;" newline="True"/>
+                <input variable="Oper"/>
+                <if expression="Oper == 1">
+                    <then>
+                        <output expression="Num1+Num2" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="Oper == 2">
+                    <then>
+                        <output expression="Num1-Num2" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="Oper == 3">
+                    <then>
+                        <output expression="Num1*Num2" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="Oper == 4">
+                    <then>
+                        <if expression="Num2 == 0">
+                            <then>
+                                <output expression="&quot;This operation cannot be done since Num 2 is zero&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="Num1/Num2" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="Oper == 5">
+                    <then>
+                        <output expression="Num1%Num2" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Do you want to continue? &quot;" newline="True"/>
+                <input variable="YesNo"/>
+                <if expression="YesNo == &quot;No&quot;">
+                    <then>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <breakpoint expression="" always="True"/>
+        </body>
+    </function>
+</flowgorithm>

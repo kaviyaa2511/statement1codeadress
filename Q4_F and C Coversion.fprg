@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Q4_F and C Coversion"/>
+        <attribute name="authors" value="kaviy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-21 01:15:33 PM"/>
+        <attribute name="created" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTE4OzA5OjQzOjU1IFBNOzIzNjM="/>
+        <attribute name="edited" value="a2F2aXk7S0FWSVlBQTsyMDI1LTA5LTIxOzAxOjE1OjMzIFBNOzI7MjQ1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fahrenheitConvert, celsiusConvert" type="Real" array="False" size=""/>
+            <input variable="fahrenheitConvert"/>
+            <assign variable="celsiusConvert" expression="(fahrenheitConvert-32)*5/9"/>
+            <output expression="celsiusConvert" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

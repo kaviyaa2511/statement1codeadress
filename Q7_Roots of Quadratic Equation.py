@@ -1,0 +1,6 @@
+coefficientX2=float(input("Enter Coefficient of X^2: "))
+coefficientX=float(input("Enter Coefficient of X: "))
+constant=float(input("Enter Constant: "))
+zeroOne=((-coefficientX)+((coefficientX**2)-(4*coefficientX2*constant))**(1/2))/(2*coefficientX2)
+zeroTwo=((-coefficientX)-((coefficientX**2)-(4*coefficientX2*constant))**(1/2))/(2*coefficientX2)
+print("The zeros of the Quadratic equation", coefficientX2,"x^2",coefficientX,"x",constant, "=", zeroOne, ",", zeroTwo)
